@@ -15,5 +15,7 @@ RUN apt-get update --quiet && \
  apt-get clean --quiet && \
  rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
+COPY file/sumo*.json /etc/
+
 COPY run.sh /run.sh
 ENTRYPOINT ["/bin/bash", "/run.sh"]
