@@ -5,7 +5,7 @@
       "sourceType" : "LocalFile",
       "name": "localfile-collector-container",
       "pathExpression": "/tmp/clogs/**",
-      "multilineProcessingEnabled": false,
+      "multilineProcessingEnabled": true,
       "automaticDateParsing": true,
       "forceTimeZone": false,
       "category": "collector-container"
