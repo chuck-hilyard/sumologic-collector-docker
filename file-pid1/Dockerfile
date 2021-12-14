@@ -21,7 +21,7 @@ WORKDIR "/opt/SumoCollector"
 
 RUN ln -s $(grep "wrapper.java.classpath.1" config/wrapper.conf | cut -d"/" -f 2) latest-version
 
-ENTRYPOINT ["jre/bin/java", \
+ENTRYPOINT ["/usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java", \
              "-cp", \
              "latest-version/lib/*", \
              "-server", \
